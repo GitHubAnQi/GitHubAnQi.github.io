@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    
+    Hexo</title>
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+  
+  <script src="/js/pace.min.js"></script>
+</head>
+</html>
+<body>
+<main class="content">
+  <section class="outer">
+  
+
+<article id="post-Mysql  语句" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
+  <div class="article-inner">
+    
+
+    
+      <div class="article-meta">
+        <a href="/2019/10/18/Mysql  语句/" class="article-date">
+  <time datetime="2019-10-18T06:31:30.431Z" itemprop="datePublished">2019-10-18</time>
+</a>
+        
+      </div>
+    
+
+    
+      
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+        <h1 id="Mysql-语句"><a href="#Mysql-语句" class="headerlink" title="Mysql  语句"></a>Mysql  语句</h1><h6 id="添加数据："><a href="#添加数据：" class="headerlink" title="添加数据："></a>添加数据：</h6><p>insert [into] 表名 （列名称1，列名称2，列名称3） values (添加的值);</p>
+<h6 id="修改数据："><a href="#修改数据：" class="headerlink" title="修改数据："></a>修改数据：</h6><p>upade 表名 set  需要修改的字段 /while 条件；</p>
+<h6 id="删除数据："><a href="#删除数据：" class="headerlink" title="删除数据："></a>删除数据：</h6><p>delete from 表名 /while 条件；</p>
+<p>truncate  表名  ；</p>
+<h6 id="查询数据"><a href="#查询数据" class="headerlink" title="查询数据"></a>查询数据</h6><p>select *  from 表名；全表查询</p>
+<p>select  列名 from 表名；查询列 </p>
+<p>select 字段名1 as 别名，字段名2 as别名 from 表名;  查询列 更改列的字段名为别名</p>
+<h1 id="Mysql内置函数"><a href="#Mysql内置函数" class="headerlink" title="Mysql内置函数"></a>Mysql内置函数</h1><p>concat  连接字符串 ；</p>
+<p>concat  连接字符串    select concat(‘今天’，‘晴天’’)，返回’今天晴天‘；</p>
+<p>length  字符串长度； length(‘hello world’);返回结果11</p>
+<p>upper   字符串转为大写；upper(‘abcd’)返回大写ABCD</p>
+<p>ltrim    去除字符串左边的空格；</p>
+<p>rtrim   去除字符串右边的空格；</p>
+<p>trim   去除字符串左右两边的空格；</p>
+<p>replace  replace（’abccd,’c’,’x’）返回为’abxxd‘替换字符串中的c  换成x；</p>
+<p>strcmp 比较字符；</p>
+<p>substring  </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/18/Mysql  语句/" data-id="ck1vr9qcn0000egudqkh6zqb6"
+         class="article-share-link">Share</a>
+      
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+    
+      <a href="/2019/10/11/面向对象/" class="article-nav-link">
+        <strong class="article-nav-caption">Olde posts</strong>
+        <div class="article-nav-title"></div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  
+
+</article>
+
+
+
+</section>
+  <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+    <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+    <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>&copy; 2019 Hexo</li>
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>Theme  <a href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+
+</main>
+
+<aside class="sidebar sidebar-specter">
+  
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+    <div class="logo">
+      <a href="/"><img src="/images/hexo.svg" alt="Hexo"></a>
+    </div>
+  
+  <ul class="nav nav-main">
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/">Home</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/archives">Archives</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/gallery">Gallery</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/about">About</a>
+      </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+        <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+          <i class="fe fe-feed"></i>
+        </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/lazyload.min.js"></script>
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+  <script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+  <script src="/js/tocbot.min.js"></script>
+  <script>
+    // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+    tocbot.init({
+      tocSelector: '.tocbot',
+      contentSelector: '.article-entry',
+      headingSelector: 'h1, h2, h3, h4, h5, h6',
+      hasInnerContainers: true,
+      scrollSmooth: true,
+      positionFixedSelector: '.tocbot',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  </script>
+
+
+<script src="/js/ocean.js"></script>
+
+</body>
+</html>
