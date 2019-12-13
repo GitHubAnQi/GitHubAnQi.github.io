@@ -59,6 +59,137 @@
       
         
 
+<article id="post-动态网页开发知识点" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
+  <div class="article-inner">
+    
+
+    
+      <div class="article-meta">
+        <a href="/2019/12/13/动态网页开发知识点/" class="article-date">
+  <time datetime="2019-12-13T06:35:14.316Z" itemprop="datePublished">2019-12-13</time>
+</a>
+        
+      </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+        <h1 id="动态网页开发知识点"><a href="#动态网页开发知识点" class="headerlink" title="动态网页开发知识点"></a>动态网页开发知识点</h1><h2 id="动态网页开发基础"><a href="#动态网页开发基础" class="headerlink" title="动态网页开发基础"></a><strong>动态网页开发基础</strong></h2><p>三大领域：B/S(网站)C/S(QQ)嵌入式(苹果，安卓手机)</p>
+<p>动态网页需要技术：Html，Css，数据库，javascript，xml，和一门高级 语言例如：java     c#   php。</p>
+<p>主流的动态网页技术：jsp/asp.net/php</p>
+<p>Web服务器一般指网站服务器，是指驻留于<a href="http://baike.baidu.com/view/1706.htm" target="_blank" rel="noopener">因特网</a>上某种类型计算机的程序，可以向浏览器等Web客户端提供文档，</p>
+<p>常见的web服务器:</p>
+<ol>
+<li><p>weblogic   oracle 公司</p>
+</li>
+<li><p>websphere  IBM公司  </p>
+</li>
+<li><p>Jboss 免费的开源的</p>
+</li>
+<li><p>tomcat 小型的</p>
+</li>
+</ol>
+<p><strong>1.JSP为什么出现？</strong></p>
+<p>在开发Web网站时，发现使用servlet做界面比较麻烦,于是又有了一种新技术JSP</p>
+<p><strong>2.Jsp是什么?</strong></p>
+<p>jsp运行在服务器</p>
+<ol>
+<li><p>jsp(java server page)</p>
+</li>
+<li><p>jsp的基础是servlet(相当于给servlet做个包装)</p>
+</li>
+<li><p>jsp是综合技术jsp=java代码+html+css+javascript+jsp标签</p>
+</li>
+<li><p>jsp无需配置，如果你修改了jsp代码，不需要重新reload  web应用</p>
+</li>
+<li><p>jsp访问：<a href="http://IP:8080/web应用名/jsp路径（jsp路径从WebRoot开始算）" target="_blank" rel="noopener">http://IP:8080/web应用名/jsp路径（jsp路径从WebRoot开始算）</a></p>
+<p>基于B/S架构的web应用程序由于不再受到安装客户端的限制，访问极其简便，因此越来越多地被企业采用。 在此需要特别说明的是<strong>B/S架构的出现不是对C/S架构的否定</strong>,而是对C/S架构的一种变化或者改进</p>
+</li>
+</ol>
+<p>\1. <strong>HTTP协议:     服务器域名或IP     端口号    路径</strong></p>
+<p><strong>举例：</strong><a href="http://www.sohu.com/news/index.html" target="_blank" rel="noopener"><strong>http://www.sohu.com/news/index.html</strong></a></p>
+<p><strong>默认的http端口号为80，</strong></p>
+<p><strong>端口号与网络协议相关</strong></p>
+<p>\2.<strong>Tomcat启动与停止</strong></p>
+<p>通过服务器实现启动或停止</p>
+<p>通过控制面板&gt;管理工具&gt;服务&gt;鼠标右击Apache Tomcat选择启动停止</p>
+<p>通过Tomcat菜单中的Monitor Tomcat工具启动或停止Tomcat服务</p>
+<p>通过所有程序&gt;Apache Tomcat XX&gt;Monitor Tomcat&gt;General选择启动或停止</p>
+<p>五，Tomcat目录结构</p>
+<p>/bin              存放各种平台下用于启动和停止Tomcat的脚本文件</p>
+<p>/conf            存放Tomcat服务器的各种配置文件，其中最重要的是server.xml</p>
+<p>/lib              存放Tomcat服务器所需的各种JAR文件</p>
+<p>/logs            存放Tomcat的日志文件</p>
+<p>/temp           Tomcat运行时用于存放临时文件</p>
+<p>/webapps        Web应用的发布目录</p>
+<p>/work           Tomcat把由JSP生成的Servlet放于此目录下</p>
+<h2 id="JSP的组成"><a href="#JSP的组成" class="headerlink" title="JSP的组成"></a><strong>JSP的组成</strong></h2><p>JSP的执行过程：翻译阶段  编译阶段   执行阶段   </p>
+<p>JSP页面组成：静态内容 ，指令，表达式 ，小脚本 ，声明 ，注释</p>
+<p>JSP中的注释：HTML注释，JSP注释标记，</p>
+<p>JSP指令元素page里面的属性 Language属性   Import属性       contentType属性</p>
+<p>jsp表达式：其语法为&lt;%=  java表达式%&gt;,容器会先计算表达式的值或者变量的值，然后将结果输出的页面</p>
+<p>Jsp声明 可以定义变量和方法，其中变量的值会一直保持，页面刷新不会重置该变量的值</p>
+<h5 id="jsp页面中的代码执行加载顺序"><a href="#jsp页面中的代码执行加载顺序" class="headerlink" title="jsp页面中的代码执行加载顺序"></a>jsp页面中的代码执行加载顺序</h5><p>java是在生成页面时在服务器端运行的代码，jsp在服务器的servlet里运行，而javascript和html都是页面生成完在浏览器端运行的代码。所以加载执行顺序是是<strong>java&gt;jsp&gt;js。</strong></p>
+<h1 id="jsp数据交互"><a href="#jsp数据交互" class="headerlink" title="jsp数据交互"></a><strong>jsp数据交互</strong></h1><p>JSP内置对象：request，response，out，application，session</p>
+<p>Request对象专门用于处理客户端请求</p>
+<h4 id="Request方法："><a href="#Request方法：" class="headerlink" title="Request方法："></a>Request方法：</h4><p>String  getParamenter（根据页面表单组件名称获取页面提交数据）</p>
+<p>String[] getParamenterValues（获取一个页面表单组件对应多个值时的用户请求数据）</p>
+<p> Void setCharacterEncoding（解决中文乱码）</p>
+<p> Request.getRequsestDispacher(path)（返回一个javax.servlet.RequestDispacher对象，该对象用forward方法用于转发请求）</p>
+<h4 id="内置对象response"><a href="#内置对象response" class="headerlink" title="内置对象response"></a>内置对象response</h4><p>1.response对象与request对象相对应，它用于响应客户端输出信息</p>
+<p> 2.response对象几个常用方法：</p>
+<p>  addCookie（Cookie cookie） 在客户端添加Cookie</p>
+<p>setContentType（String type） 设置HTTP响应的contentType类型</p>
+<p> setCharacterEncoding（String chareet）设置响应所采用的字符编码类型</p>
+<p> 重点：（ sendRedirect（String path） 将请求重新定位到一个不同的URL上）</p>
+<h3 id="二，-转发与重定向"><a href="#二，-转发与重定向" class="headerlink" title="二， 转发与重定向"></a>二， 转发与重定向</h3><p>1.什么是转发：</p>
+<p>使用request的getRequestDispatcher（）方法即可实现</p>
+<p>  转发就是将客户端发送请求道服务器，Web服务器内部的方法在容器内完成处理和请求和转发，然后将目标资源发送给浏览器，不管服务器内部如何处理，浏览器都只提出了一个请求，因而客户端的URL地址不会发生改变,因此可以共享request范围内的数据</p>
+<p>做法的作用  ： 在多个页面交互的过程中实现请求术数据的共享。</p>
+<p>2什么是重定向</p>
+<p>   使用response对象的sendRedirect（）方法。</p>
+<p>   重定向的执行结果就是客户端重新向服务器请求一个地址链接，由于是发送新的请求因而上次请求中的数据将丢失这种行为就是重定向</p>
+<h3 id="重定向和转发的区别"><a href="#重定向和转发的区别" class="headerlink" title="重定向和转发的区别"></a><strong>重定向和转发的区别</strong></h3><p><strong>区别一：</strong></p>
+<p>　　<strong>重定向时浏览器上的网址改变</strong></p>
+<p>　　<strong>转发是浏览器上的网址不变</strong></p>
+<p><strong>区别二：</strong></p>
+<p>　　<strong>重定向实际上产生了两次请求</strong></p>
+<p>​         <strong>转发只有一次请求</strong></p>
+<p><strong>区别三：</strong></p>
+<p>　　<strong>重定向时的网址可以是任何网址</strong></p>
+<p>　　<strong>转发的网址必须是本站点的网址</strong></p>
+<p>　　<strong>重定向：以前的request中存放的变量全部失效，并进入一个新的request作用域。</strong></p>
+<p>​    <strong>转发：以前的request中存放的变量不会失效，就像把两个页面拼到了一起</strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/13/动态网页开发知识点/" data-id="ck43svxud0000o4udh714j65m"
+         class="article-share-link">Share</a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+
+
+
+      
+        
+
 <article id="post-Github个人技术博客搭建教学步骤" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
   
   <div class="article-inner">
